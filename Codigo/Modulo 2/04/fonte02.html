@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonte Externas & Alinhamentos</title>
+    <style>
+       /*Codigo em CSS*/
+        @font-face {
+            font-family: 'Love';
+            src: url('fontes/LoveLady.ttf') format('truetype'),url('fontes/love story.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+
+            /*
+              Tipos de format()
+              - opentype(otf)
+              - truetype(ttf)
+              - embedded-opentype
+              - truetype-aat (Apple Advanced Typography)
+              - svg
+
+            */
+        }
+        body {
+
+            /*Especificando fonte e tamanho*/
+            font:normal 16px Arial, Verdana, serif;
+            /*Especificando texto a esquerda*/
+            text-align: left;
+            
+        }
+        h1 {
+            /*Centralizando o Titulo*/
+            text-align: center;
+            font-family: 'Love', Times, serif;
+            font-size: 3em;
+            font-weight: normal;
+        }
+        h2 {
+            text-align: right;
+        }
+
+        p {
+            /*Justificando o texto*/
+            text-align: justify;
+            /*Criando identação dos paragrafos*/
+            text-indent: 20px;
+        }
+    </style>
+</head>
+<body>
+   <h1>Titulo</h1> 
+   <h2>Subtítulo</h2>
+   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, voluptas velit. Alias laudantium similique repudiandae sed quasi, vero nobis molestiae odio nisi? Adipisci excepturi similique ipsum sit temporibus reiciendis non.</p>
+   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis pariatur eos, id, ipsa assumenda exercitationem veritatis error, praesentium quo voluptate consequuntur dicta facilis. Illo esse doloribus corrupti voluptatum, labore provident.</p>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio iusto, aliquam ea ratione asperiores rerum, architecto autem ullam odio, enim dolorem hic ipsum? Eaque ab nihil delectus laborum odio molestias. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi nesciunt nulla asperiores. Porro vitae autem saepe voluptatibus, odit corporis facilis enim hic provident vero dolorem minus odio. Consectetur, suscipit voluptates? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum accusantium consequatur corrupti nulla! Aut quaerat, ab, architecto aliquam adipisci recusandae aspernatur beatae voluptatibus repellendus consequuntur modi incidunt fuga, soluta iure?</p>
+</body>
+</html>

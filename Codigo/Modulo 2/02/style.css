@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/*CSS*/
+/*Configurações globais das CSS*/
+*{
+    font-family: Arial, Helvetica, sans-serif;
+   /* height: 100%;*/
+}
+
+body{
+    /* Usando o CSS para fazer o degrad de fundo do Site */
+    background-image: -moz-linear-gradient(to right,#0094FF, #0095FF);
+}
+
+main{
+    /* Estilizando o conteudo do site */
+    background-color: white;
+    /*Bordas arrendondadas*/
+    border-radius: 20px;
+    /*Contorno do conteudo sombreado*/
+    box-shadow: 5px 5px 15px #a57630;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+}
+
+h1{
+    /* Estilizando o titulo do site */
+    color: #FFCC80;
+    /*Centralizando titulo do site*/
+    text-align: center;
+    /*Sombreamento do tirulo*/
+    text-shadow: 1px 1px 2px black;
+}
+
+h2{
+    /*Definindo cor dos titulos*/
+    color: #0068B3;
+}
+p{
+    /*Justificando Paragrafos*/
+    text-align: justify;
+}

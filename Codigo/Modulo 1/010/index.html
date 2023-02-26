@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes
+       ou simplesmente aumente e diminua o tamanho do seu navegador.
+    </p>
+    <picture>
+        <!--Source faz a adaptação da tela do usuário-->
+        <!-- Atenção, sempre da imagem menor para a imagem maior 750px, 1000px-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png"type="image/png">
+
+        <source media="(max-width: 1000px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <!--Adicinando áudio você se lembrar de acrescentar o autoplay e controls, para que a bara de controle de áudio apareça no seu site.-->
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio src="midia/Untitled Video.mp4" controls autoplay loop></audio>
+
+    <!--Usando outros tipos de inserção de áudio já que, tem navegadores que são incompativeis com autoplay.-->
+
+    <!--No exemplo abaixo, é mostrado vários tipos de formatos de áudios, nesse caso o navegador vai tentar tocar cada um dos áudios descritos abaixo. Atenção nunca usar áudios no formato wav, pelo seu tamanho isso vai deixar o seu site lento-->
+    <audio preload="metadata"autoplay loop>
+        <source src="midia/Untitled Video.mp4"type="audio/mpeg">
+        <source src="midia/Untitled Video.mp4" type="audio/ogg">
+        <source src="midia/Untitled Video.mp4" type="audio/wav">
+    </audio>
+</body>
+</html>

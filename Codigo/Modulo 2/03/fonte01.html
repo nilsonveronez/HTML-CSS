@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <!--Determinando fonte da pagina-->
+    <style>
+        body{
+            /*Pode ser que ocorra a falta de fontes entre outros dispositivos, sendo asim, dentro de font-family usamos três tipos de fontes; Arial, Helvetica, sans-serif. No entanto, na falta de uma fonte o Browser tentara as outras duas opções. "Web Safe Fonts- W3Schools, para fontes."*/
+            font-family: Arial, Helvetica, sans-serif;
+            /* Medidas Absolutas
+               cm, mm, in=polegada, px, pt=ponto, pc=paica
+               
+            Medidas Relativas
+            em, ex, rem, vw, vh, %
+            Observação essas medidas são recomendações da W3C
+            */
+            /*shorthand font
+               Lembre-se de sempre respeitar a ordem de cada fonte no shorthand.
+               
+               font-style -> font-weight -> font-size -> font-family
+               Exemplo: font: italic bolder 3em 'Work Sans', sans-serif; 
+                              
+             /*
+            font-size: 1em;
+
+            OBS: Peso da fonte 
+            font-weight: bold;
+
+            Estilo da fonte
+            font-style: italic;
+
+            Estilo sublinhado
+            text-decoration: underline;
+
+            Determinando tamanho da fonte  
+            font-size: 16px;
+            */
+        }
+         h1 {
+             font: italic bolder 3em 'Work Sans', sans-serif;
+         }
+
+         h2 {
+              font: bold 2em 'Work Sans';
+         }
+
+        /*Obs: A W3C horienta a não usar o tamanho pt=ponto, quando se for usado para a visualização em tela, pt é somente usando quando for imprir em papel. Medidas recomendadas pela W3C são; em, px.*/
+          
+        /*Determinando fonte do H1, H2*/
+        /*
+        h1, h2{
+            font-family: 'Times New Roman', Times, serif;
+        }
+        */
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, dolores officia perferendis possimus quam voluptatibus placeat voluptas necessitatibus, facere, impedit molestias ipsum in ipsam. Ipsum, ipsa culpa. Beatae, eum odio. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi totam, perferendis incidunt veniam assumenda aspernatur. Eligendi dolor maxime cum, rerum, voluptates rem at nisi, aliquam magnam itaque excepturi minima pariatur!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum facilis placeat, culpa laboriosam eveniet est deserunt harum sed itaque perferendis vitae possimus facere tenetur nobis quidem repudiandae ea necessitatibus magnam?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem vitae architecto, eveniet dolores perferendis reiciendis quaerat alias suscipit molestiae vel placeat, tempora eos iste. Expedita iure facilis tempora dolor repudiandae.</p>
+
+    <h2>Subtitulo do exercicio</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius dicta, aliquid facere rerum voluptas mollitia harum ipsa quis blanditiis, nemo odit architecto hic pariatur error sapiente sit neque maiores esse.</p>
+
+</body>
+</html>

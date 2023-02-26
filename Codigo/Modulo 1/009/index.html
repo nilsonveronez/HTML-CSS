@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+
+    <!--Link interno vai fazer ligação a outras páginas que estão dentro do nosso site.-->
+
+    <!--<a, significa ancora, href= referencia a hipertexto-->
+
+        <!--target="_blank" isso abre uma nova aba no navegado, quando o link for clicado.-->
+
+        <!--O rel="external fala para o google que o link é externo facilitando a busca"-->
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar o meu <a href="https://gustavoguanabara.github.io" target="_blank" rel="external">repositório público no GitHub</a></p>
+
+    <!--Link interno, faz uma relação com a pagina, só que faz da o acesso a uma pasta dentro do nosso servidor, com qualquer conteudo que queremos compartilhar publicamente.
+    Existem dois tipos de link interno-->
+
+    <h1>Usando links internos</h1>
+
+    <!--Sempre que eu quiser fazer um link interno, não preciso digitar o link intero da URL desde, que a página 02, esteja dentro da mesma pasta do index.html-->
+
+    <!--target="_self, siginifica na propria página. Isso faz com que a página abra na mesma aba"-->
+    <p>Esta é a primeira página do site. Se você quiser, pode acessar tabém a minha <a href="pag002.html" rel="next" target="_self">segunda página</a></p>
+    <p>Você também pode acessar nossa <a href="Noticias/pag003.html" rel="next" target="_self">página de notícias</a></p>
+
+    <!--href="#", jogo da velha, siginifica link vazio-->
+
+    <!--No caso type="application/pdf, foi tirado do site www.iana.org/assignments/media-types/media-types.xhtml"-->
+    <h1>Links para downloads</h1>
+    <ul>
+        <li><a href="Livro/fatura.pdf" download="fatura.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
+        <li><a href="Livro/faturaa.zip" download="faturaa.zip" type="application/zip">Livro compactado ZIP</a></li>
+    </ul>
+
+</body>
+</html>

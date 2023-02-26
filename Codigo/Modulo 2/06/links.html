@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+     /* Seletores Personalizados.
+       #  = id
+       .  = class
+       :  = pseudo-class
+       :: = pseudo-element
+       >  = clildren
+
+     */
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color:black;
+            /*Tirando o sublinhado */
+            text-decoration: none;
+            /*Negrito*/
+            font-weight: bold;
+        }
+        /*Os sites visitado vão ficar na cor aqua*/
+        a:visited {
+            color: aqua;
+        }
+         /*Quando o mouse passar em cima do menu fica sublinhado e preto*/
+        a:hover {
+            text-decoration: underline;
+            color: yellow;
+        }
+        /*Quando o link é clicado muda sua cor*/
+        a:active {
+            color: darkgreen;
+        }
+        /*Adicionando simbolo antes do link*/
+        .especial::before {
+            content: '㊒ ';
+        }
+        /*Depois de todos os links escreva no final a palavra [link]*/
+        .especial::after {
+            content: ' [link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+
+        .especial {
+            background-color: rgb(149, 253, 128);
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <!--target é usado para abrir uma nova aba.-->
+        <li><a href="https://gustavoguanabara.github.io"class='especial' target="blank">Repositorio GitHub</a></li>
+        <li><a href="https://youtube.com.br"class="especial">Canal do YouTube </a></li>
+        <li><a href="https://acoriber.com.br">Aço Riber</a></li>
+    </ul>
+</body>
+</html>
