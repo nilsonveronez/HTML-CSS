@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Imagem de Fundo</title>
+
+    <!-- Estilizando a class quadrado-->
+    <style>
+        /*<!-- chamando a class quadrado e estilizando-->*/
+        div.quadrado {
+            /*Alinhando as divs na horizontal*/
+            display: inline-block;
+            /*Largura da borda na cor preta*/
+            border: 2px solid black;
+            /*Arredondando as bordas*/
+            border-radius: 10px;
+            /*A cor de fundo cinza*/
+            background-color: lightgray;
+            /*Largura das Divs*/
+            width: 300px;
+            /*Largura das Divs*/
+            height: 300px;
+        }
+        div#q1 {
+           background-color: skyblue;
+        }
+        div#q2 {
+           background-image: linear-gradient(to bottom, yellow, red);
+        }
+        div#q3 {
+           background-image: url("imagens/pattern001.png");
+        }
+    </style>
+</head>
+<body>
+    <!--Criando Div quadrado-->
+    <div class="quadrado" id="q1">
+
+    </div>
+    <!--Criando Div quadrado-->
+    <div class="quadrado" id="q2">
+
+    </div>
+    <!--Criando Div quadrado-->
+    <div class="quadrado" id="q3">
+
+    </div>
+</body>
+</html>
