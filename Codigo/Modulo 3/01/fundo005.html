@@ -7,23 +7,31 @@
     <title>Site site</title>
     <style>
         body {
-            /*Ocupar tamanho maximo da tela*/
+            /*Oculpar tamanho maximo da tela*/
             height: 100vh;
             background-color: black;
             /*Colocando imagem de fundo*/
             background-image: url("imagens/wallpaper002.jpg");
             /*Centralizando a imagem*/
             background-position: center top;
-            /*Impredindo que a imagem se repita*/
+            /*Impedindo que a imagem se repita*/
             background-repeat: repeat-y;
             /*Adequando o tamanho da imagem*/
             background-size: cover;
+            /*Deixando a imagem de fundo fixa*/
+            background-attachment: fixed;
+
+            /*Shorthand - background
+              color > image > position > repeat > size > attachment
+            */
+            
         }
+        /*Confeccionando o main*/
         main {
             /*cor do fundo do main*/
             background-color: white;
-            /*Determinando tamanho do main*/
-            width: 400px;
+            /*Determinando tamanho da largura da tela*/
+            max-width: 400px;
             /*preenchimento dando um espaço interno*/
             padding: 10px;
             /*Posicionando ao meio da tela*/
